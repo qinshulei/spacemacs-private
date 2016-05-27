@@ -31,22 +31,38 @@ values."
    ;; List of configuration layers to load. If it is the symbol `all' instead
    ;; of a list then all discovered layers will be installed.
    dotspacemacs-configuration-layers '(
-                                       dash
+                                       ;; my personal layer
+                                       qinshulei
+                                       ;; tools
+                                       org
+                                       (dash :variables
+                                             dash-helm-dash-docset-path "~/.docsets")
                                        command-log
                                        wakatime
                                        shell
                                        better-defaults
                                        chinese
+                                       git
+                                       (version-control :variables
+                                                        version-control-diff-tool 'diff-hl
+                                                        version-control-global-margin t)
+                                       (auto-completion :variables
+                                                        auto-completion-enable-sort-by-usage t
+                                                        auto-completion-enable-snippets-in-popup t)
+                                       (syntax-checking :variables
+                                                        syntax-checking-enable-by-default nil)
+                                       (spell-checking :variables
+                                                       spell-checking-enable-by-default nil)
+
+                                       ;; language
                                        html
                                        java
                                        javascript
+                                       emacs-lisp
                                        markdown
                                        python
                                        shell-scripts
                                        yaml
-                                       git
-                                       version-control
-                                       auto-completion
                                        )
    ;; List of additional packages that will be installed without being
    ;; wrapped in a layer. If you need some configuration for these
@@ -55,6 +71,7 @@ values."
    dotspacemacs-additional-packages '(
                                       how-many-lines-in-project
                                       camcorder
+                                      ag
                                       )
    ;; A list of packages and/or extensions that will not be install and loaded.
    dotspacemacs-excluded-packages '(
