@@ -33,6 +33,9 @@ values."
    dotspacemacs-configuration-layers '(
                                        ;; my personal layer
                                        qinshulei
+                                       keyfreq
+                                       groovy
+                                       multiple-cursors
                                        ;; tools
                                        org
                                        (dash :variables
@@ -53,6 +56,10 @@ values."
                                                         syntax-checking-enable-by-default nil)
                                        (spell-checking :variables
                                                        spell-checking-enable-by-default nil)
+
+                                       ;; contains chrome edit server
+                                       chrome
+                                       github
 
                                        ;; language
                                        html
