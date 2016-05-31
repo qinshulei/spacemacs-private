@@ -1,8 +1,10 @@
 (setq qinshulei-packages
       '(
         ;; have been init by spacemacs
+        avy
         expand-region
         move-dup
+        browse-kill-ring
         ))
 
 (defun qinshulei/init-move-dup ()
@@ -15,4 +17,15 @@
 
     (global-set-key (kbd "C-c d") 'md/duplicate-down)
     (global-set-key (kbd "C-c D") 'md/duplicate-up)
+    ))
+
+
+(defun qinshulei/init-browse-kill-ring ()
+  (use-package browse-kill-ring
+    :config
+    (setq browse-kill-ring-separator "\f")
+    (global-set-key (kbd "M-Y") 'browse-kill-ring)
+    (define-key browse-kill-ring-mode-map (kbd "C-g") 'browse-kill-ring-quit)
+    (define-key browse-kill-ring-mode-map (kbd "M-n") 'browse-kill-ring-forward)
+    (define-key browse-kill-ring-mode-map (kbd "M-p") 'browse-kill-ring-previous)
     ))
