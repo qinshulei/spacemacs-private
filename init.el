@@ -284,7 +284,9 @@ in `dotspacemacs/user-config'."
   "Configuration function.
  This function is called at the very end of Spacemacs initialization after
 layers configuration."
-  (setq-default powerline-default-separator 'arrow)
+  (setq-default powerline-default-separator 'arrow
+                org-agenda-files (file-expand-wildcards "~/org/*.org")
+                )
 
   )
 
