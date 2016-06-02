@@ -252,7 +252,7 @@ values."
    dotspacemacs-highlight-delimiters 'all
    ;; If non nil advises quit functions to keep server open when quitting.
    ;; (default nil)
-   dotspacemacs-persistent-server t
+   dotspacemacs-persistent-server nil
    ;; List of search tool executable names. Spacemacs uses the first installed
    ;; tool of the list. Supported tools are `ag', `pt', `ack' and `grep'.
    ;; (default '("ag" "pt" "ack" "grep"))
@@ -284,11 +284,18 @@ in `dotspacemacs/user-config'."
   "Configuration function.
  This function is called at the very end of Spacemacs initialization after
 layers configuration."
+
+  ;; TODO : [WARNING] this config include many hard code location
   (setq-default powerline-default-separator 'arrow
                 org-agenda-files (file-expand-wildcards "~/org/*.org")
                 projectile-tags-command "ctags-exuberant -Re -f \"%s\" %s"
                 )
+  (setq pyim-dicts '((:name "default-dict"
+                            :file "~/configs/chinese-py/pyim-bigdict.txt"
+                            :coding utf-8-unix
+                            :dict-type pinyin-dict)))
   )
+
 
 (setq custom-file (expand-file-name "custom.el" dotspacemacs-directory))
 (load custom-file 'no-error 'no-message)
