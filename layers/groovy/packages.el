@@ -1,5 +1,6 @@
 (setq groovy-packages
       '(
+        company
         groovy-mode
         ))
 
@@ -12,3 +13,6 @@
     (add-hook 'java-mode-hook
               (lambda ()
                 (c-set-style "java")))))
+
+(defun groovy/post-init-company ()
+  (spacemacs|add-company-hook groovy-mode))

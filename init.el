@@ -209,7 +209,7 @@ values."
    dotspacemacs-loading-progress-bar t
    ;; If non nil the frame is fullscreen when Emacs starts up. (default nil)
    ;; (Emacs 24.4+ only)
-   dotspacemacs-fullscreen-at-startup nil
+   dotspacemacs-fullscreen-at-startup t
    ;; If non nil `spacemacs/toggle-fullscreen' will not use native fullscreen.
    ;; Use to disable fullscreen animations in OSX. (default nil)
    dotspacemacs-fullscreen-use-non-native nil
@@ -286,8 +286,8 @@ in `dotspacemacs/user-config'."
 layers configuration."
   (setq-default powerline-default-separator 'arrow
                 org-agenda-files (file-expand-wildcards "~/org/*.org")
+                projectile-tags-command "ctags-exuberant -Re -f \"%s\" %s"
                 )
-
   )
 
 (setq custom-file (expand-file-name "custom.el" dotspacemacs-directory))
