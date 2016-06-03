@@ -5,6 +5,7 @@
         expand-region
         move-dup
         browse-kill-ring
+        anzu
         ))
 
 (defun qinshulei/init-move-dup ()
@@ -29,3 +30,14 @@
     (define-key browse-kill-ring-mode-map (kbd "M-n") 'browse-kill-ring-forward)
     (define-key browse-kill-ring-mode-map (kbd "M-p") 'browse-kill-ring-previous)
     ))
+
+(defun qinshulei/init-anzu ()
+  (use-package anzu
+    :init
+    (global-anzu-mode t)
+    :config
+    (progn
+      (spacemacs|hide-lighter anzu-mode)
+      (global-set-key [remap query-replace-regexp] 'anzu-query-replace-regexp)
+      (global-set-key [remap query-replace] 'anzu-query-replace)
+      )))

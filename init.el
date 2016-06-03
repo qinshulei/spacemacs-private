@@ -57,6 +57,11 @@ values."
                                        (spell-checking :variables
                                                        spell-checking-enable-by-default nil)
 
+                                       ;; config file
+                                       ansible
+                                       dockerfile
+                                       puppet
+
                                        ;; contains chrome edit server
                                        chrome
                                        github
