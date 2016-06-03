@@ -8,6 +8,7 @@
         anzu
         dired+
         diff-hl
+        highlight-indentation
         ))
 
 (defun qinshulei/init-move-dup ()
@@ -58,6 +59,34 @@
       (setq font-lock-maximum-decoration (quote ((dired-mode . 1) (t . t))))
       (toggle-diredp-find-file-reuse-dir 1)
       )))
+
+
+(defun qinshulei/init-highlight-indentation ()
+  (use-package highlight-indentationx
+    :defer t
+    :init
+    (progn
+      (dolist (highlight-indentation-hook '(lisp-mode-hook
+                                            emacs-lisp-mode-hook
+                                            scheme-mode-hook
+                                            clojure-mode-hook
+                                            ruby-mode-hook
+                                            yaml-mode
+                                            groovy-mode
+                                            python-mode-hook
+                                            shell-mode-hook
+                                            php-mode-hook
+                                            css-mode-hook
+                                            nxml-mode-hook
+                                            perl-mode-hook
+                                            javascript-mode-hook))
+        (add-hook highlight-indentation-hook 'highlight-indentation-mode)))
+    :config
+    (progn
+      (set-face-background 'highlight-indentation-face "#183743")
+      (set-face-background 'highlight-indentation-current-column-face "#193844")
+      )))
+
 
 (defun qinshulei/post-init-diff-hl ()
   (use-package diff-hl
