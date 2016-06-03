@@ -6,6 +6,8 @@
         move-dup
         browse-kill-ring
         anzu
+        dired+
+        diff-hl
         ))
 
 (defun qinshulei/init-move-dup ()
@@ -40,4 +42,27 @@
       (spacemacs|hide-lighter anzu-mode)
       (global-set-key [remap query-replace-regexp] 'anzu-query-replace-regexp)
       (global-set-key [remap query-replace] 'anzu-query-replace)
+      )))
+
+(defun qinshulei/init-dired+ ()
+  (use-package dired+
+    :defer t
+    :init
+    (progn
+      (setq diredp-hide-details-initially-flag nil)
+      (setq diredp-hide-details-propagate-flag t)
+      (when (fboundp 'global-dired-hide-details-mode)
+        (global-dired-hide-details-mode -1))
+      ;; use single buffer for all dired navigation
+      ;; disable font themeing from dired+
+      (setq font-lock-maximum-decoration (quote ((dired-mode . 1) (t . t))))
+      (toggle-diredp-find-file-reuse-dir 1)
+      )))
+
+(defun qinshulei/post-init-diff-hl ()
+  (use-package diff-hl
+    :defer t
+    :init
+    (progn
+      (add-hook 'dired-mode-hook 'diff-hl-dired-mode)
       )))
