@@ -9,6 +9,7 @@
         dired+
         diff-hl
         highlight-indentation
+        web-mode
         ))
 
 (defun qinshulei/init-move-dup ()
@@ -95,3 +96,11 @@
     (progn
       (add-hook 'dired-mode-hook 'diff-hl-dired-mode)
       )))
+
+(defun qinshulei/post-init-web-mode ()
+  (use-package web-mode
+    :defer t
+    :mode
+    (("\\.jelly\\'" . web-mode)
+     ("\\.jsp\\'" . web-mode)
+     ("\\.gsp\\'" . web-mode))))
