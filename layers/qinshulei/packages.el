@@ -58,7 +58,8 @@
       ;; use single buffer for all dired navigation
       ;; disable font themeing from dired+
       (setq font-lock-maximum-decoration (quote ((dired-mode . 1) (t . t))))
-      (toggle-diredp-find-file-reuse-dir 1)
+      ;; don't reuse dir
+      ;; (toggle-diredp-find-file-reuse-dir 1)
       )))
 
 
