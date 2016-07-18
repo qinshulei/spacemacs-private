@@ -36,6 +36,7 @@ values."
                                        keyfreq
                                        groovy
                                        multiple-cursors
+                                       visual-regexp
                                        ;; tools
                                        org
                                        (dash :variables

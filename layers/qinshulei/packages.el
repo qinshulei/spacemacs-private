@@ -10,6 +10,7 @@
         diff-hl
         highlight-indentation
         web-mode
+        company
         ))
 
 (defun qinshulei/init-move-dup ()
@@ -105,3 +106,6 @@
     (("\\.jelly\\'" . web-mode)
      ("\\.jsp\\'" . web-mode)
      ("\\.gsp\\'" . web-mode))))
+
+(defun qinshulei/post-init-company ()
+  (spacemacs|add-company-hook Shell-script-mode))
