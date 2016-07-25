@@ -11,6 +11,7 @@
         highlight-indentation
         web-mode
         company
+        helm-dash
         ))
 
 (defun qinshulei/init-move-dup ()
@@ -109,3 +110,10 @@
 
 (defun qinshulei/post-init-company ()
   (spacemacs|add-company-hook Shell-script-mode))
+
+(defun qinshulei/post-helm-dash ()
+  (use-package helm-dash
+    :config
+    (setq helm-dash-browser-func 'eww)
+    (setq helm-dash-min-length 3)
+    ))
