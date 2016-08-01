@@ -13,34 +13,39 @@ git clone https://github.com/qinshulei/spacemacs-private.git ~/.spacemacs.d/
 + groovy-mode
 + keyfreq
 + multiple-cursors
++ visual-regexp
++ anzu
++ dired+
 + move-dup
++ helm-dash
 + browse-kill-ring
 
 ## special key bindings
 
 ```
-C-; runs the command avy-goto-word-or-subword-1, which is an interactive
-autoloaded compiled Lisp function in `avy.el'.
+C-; runs the command avy-goto-word-or-subword-1
 
-C-= runs the command er/expand-region, which is an alias for `er/expand-region'
-in `expand-region.el'.
+C-= runs the command er/expand-region
 
-C-+ runs the command mc/mark-next-like-this, which is an interactive autoloaded
-compiled Lisp function in `mc-mark-more.el'.
+C-+ runs the command mc/mark-next-like-this
 
-M-Y runs the command browse-kill-ring, which is an interactive autoloaded
-compiled Lisp function in `browse-kill-ring.el'.
+M-Y runs the command browse-kill-ring
 
-<M-up> runs the command md/move-lines-up, which is an interactive autoloaded
-compiled Lisp function in `move-dup.el'.
+<M-up> runs the command md/move-lines-up
 
-<M-down> runs the command md/move-lines-down, which is an interactive autoloaded
-compiled Lisp function in `move-dup.el'.
+<M-down> runs the command md/move-lines-down
 
-C-. runs the command set-mark-command, which is an interactive compiled Lisp
-function in `simple.el'.
+C-c d runs the command md/duplicate-down
 
-C-c j runs the command join-line, which is an alias for `delete-indentation' in
-`simple.el'.
+C-c D runs the command md/duplicate-up
 
+C-. runs the command set-mark-command
+
+C-c j runs the command join-line
+
+C-M-<backspace> runs the command kill-back-to-indentation
+
+# set-mark-command first , then in isearch mode.
+M-z runs the command zap-to-isearch
+C-o runs the command isearch-occur
 ```
