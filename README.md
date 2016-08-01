@@ -1,6 +1,6 @@
 # qinshueli的 Emacs 配置
 
-转 spacemacs, 新的开始.
+转 spacemacs, 新的开始. 使用emacs默认快捷键.
 
 ## 使用方法
 
@@ -10,15 +10,16 @@ git clone https://github.com/qinshulei/spacemacs-private.git ~/.spacemacs.d/
 ```
 
 ## extra packages
-+ groovy-mode
-+ keyfreq
-+ multiple-cursors
-+ visual-regexp
-+ anzu
-+ dired+
-+ move-dup
-+ helm-dash
-+ browse-kill-ring
++ camcorder 支持 gif 录制
++ keyfreq 记录按键频率
++ multiple-cursors 多行编辑
++ visual-regexp 实时显示正则的match结果
++ anzu 实时显示isearch的match结果
++ dired+ 目录的一些操作
++ move-dup 方便的行操作
++ helm-dash 查看dash文档
++ browse-kill-ring 浏览粘贴板
++ groovy-mode 支持groovy语言
 
 ## special key bindings
 
