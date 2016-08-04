@@ -83,7 +83,6 @@ values."
    ;; configuration in `dotspacemacs/user-config'.
    dotspacemacs-additional-packages '(
                                       how-many-lines-in-project
-                                      camcorder
                                       ag
                                       livescript-mode
                                       )

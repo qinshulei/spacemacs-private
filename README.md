@@ -49,4 +49,9 @@ C-M-<backspace> runs the command kill-back-to-indentation
 # set-mark-command first , then in isearch mode.
 M-z runs the command zap-to-isearch
 C-o runs the command isearch-occur
+
+# in camcorder-record
+F9 stop record
+shift-F9 pause record
+
 ```

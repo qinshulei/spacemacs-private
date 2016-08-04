@@ -12,6 +12,7 @@
         web-mode
         company
         helm-dash
+        camcorder
         ))
 
 (defun qinshulei/init-move-dup ()
@@ -24,6 +25,13 @@
 
     (global-set-key (kbd "C-c d") 'md/duplicate-down)
     (global-set-key (kbd "C-c D") 'md/duplicate-up)
+    ))
+
+(defun qinshulei/init-camcorder ()
+  (use-package camcorder
+    :config
+    (define-key camcorder-mode-map (kbd "<f9>") 'camcorder-stop)
+    (define-key camcorder-mode-map (kbd "C-x <f9>") 'camcorder-pause)
     ))
 
 
