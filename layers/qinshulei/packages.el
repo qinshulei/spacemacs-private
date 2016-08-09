@@ -11,6 +11,7 @@
         highlight-indentation
         web-mode
         company
+        helm
         helm-dash
         camcorder
         ))
@@ -119,9 +120,15 @@
 (defun qinshulei/post-init-company ()
   (spacemacs|add-company-hook Shell-script-mode))
 
-(defun qinshulei/post-helm-dash ()
+(defun qinshulei/post-init-helm-dash ()
   (use-package helm-dash
     :config
     (setq helm-dash-browser-func 'eww)
     (setq helm-dash-min-length 3)
+    ))
+
+(defun qinshulei/post-init-helm ()
+  (use-package helm
+    :config
+    (setq helm-M-x-prefix-argument t)
     ))
