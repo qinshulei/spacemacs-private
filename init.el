@@ -85,6 +85,7 @@ values."
                                       how-many-lines-in-project
                                       ag
                                       livescript-mode
+                                      suggest
                                       )
    ;; A list of packages and/or extensions that will not be install and loaded.
    dotspacemacs-excluded-packages '(

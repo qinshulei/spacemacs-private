@@ -46,6 +46,8 @@ C-c j runs the command join-line
 
 C-M-<backspace> runs the command kill-back-to-indentation
 
+C-x t insert date
+
 # set-mark-command first , then in isearch mode.
 M-z runs the command zap-to-isearch
 C-o runs the command isearch-occur

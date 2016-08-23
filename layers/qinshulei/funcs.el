@@ -54,3 +54,14 @@ This is useful when followed by an immediate kill."
   (interactive "r")
   (isearch-exit)
   (goto-char isearch-other-end))
+
+;;;insert time function
+(defun insert-date ()
+  "Insert current date yyyy-mm-dd."
+  (interactive)
+  (when (region-active-p)
+    (delete-region (region-beginning) (region-end) ))
+  (insert (format-time-string "%Y-%m-%d %H:%M:%S")))
+
+;;binder insert date to key c-x t
+(global-set-key (kbd "C-x t") 'insert-date)
