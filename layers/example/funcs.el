@@ -220,3 +220,7 @@
 (defun dash-python-docs ()
   (interactive)
   (setq-local helm-dash-docsets '("Python 2" )))
+
+(defun my-compile ()
+  (interactive)
+  (compile "make -j4"))
