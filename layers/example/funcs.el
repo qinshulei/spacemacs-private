@@ -111,3 +111,112 @@
 (global-set-key [(control f4)] '(lambda ()
                                   (interactive)
                                   (jump-to-register 4)))
+
+
+(defun dos2unix ()
+  (interactive)
+  (goto-char (point-min))
+  (while (search-forward "\r" nil t)
+    (replace-match "")
+    )
+  )
+
+(defun unix2dos ()
+  (interactive)
+  (goto-char (point-min))
+  (while (search-forward "\n" nil t)
+    (replace-match "\r\n")
+    )
+  )
+
+(defun tab-width-2 ()
+  "Set tab width to 2"
+  (interactive)
+  (setq-default tab-width 2))
+
+(defun tab-width-4 ()
+  "Set tab width to 4"
+  (interactive)
+  (setq-default tab-width 4))
+
+(defun tab-width-8 ()
+  "Set tab width to 8"
+  (interactive)
+  (setq-default tab-width 8))
+
+(defun c-offset-2 ()
+  "Set the c-basic-offset to 2"
+  (interactive)
+  (setq c-basic-offset 2))
+
+(defun c-offset-4 ()
+  "Set the c-basic-offset to 4"
+  (interactive)
+  (setq c-basic-offset 4))
+
+(defun c-offset-8 ()
+  "Set the c-basic-offset to 8"
+  (interactive)
+  (setq c-basic-offset 8))
+
+(defun line-cleanup ()
+  "Remove all blank lines in region."
+  (interactive "*")
+  (flush-lines "^$" (point) (mark)))
+
+(defun my-save-and-compile ()
+  (interactive "")
+  (save-buffer 0)
+  (compile "make -k"))
+
+(defun refresh-buffer ()
+  "Refresh the current buffer from disk"
+  (interactive)
+  (revert-buffer t t))
+
+
+(defun get-filename ()
+  "return the filename"
+  (interactive)
+  (file-name-nondirectory(buffer-file-name)))
+(defun get-filename-no-ext ()
+  "return the filename"
+  (interactive)
+  (file-name-sans-extension(file-name-nondirectory(buffer-file-name))))
+(defun get-date()
+  "Return the current date."
+  (interactive)
+  (format-time-string "%B %d %Y at %I:%M %p"))
+(defun insert-date ()
+  "Insert the current date."
+  (interactive)
+  (insert (get-date)))
+(defun insert-filename ()
+  "Insert the filename."
+  (interactive)
+  (insert (get-filename)))
+(defun insert-filename-no-ext ()
+  "Insert the filename without extension."
+  (interactive)
+  (insert (get-filename-no-ext)))
+
+
+(defun cleanup-buffer ()
+  (interactive)
+  (delete-trailing-whitespace))
+
+(defun untabify-buffer ()
+  (interactive)
+  (untabify (point-min) (point-max)))
+
+(defun beauty-code ()
+  "beauty your code"
+  (interactive)
+  (mark-whole-buffer)
+  (tabify)
+  (delete-trailing-whitespace))
+
+;; for helm-dash
+(defun dash-python-docs ()
+  (interactive)
+  (setq-local helm-dash-docsets '("Python 2" )))

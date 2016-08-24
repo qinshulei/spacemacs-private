@@ -125,6 +125,12 @@
     :config
     (setq helm-dash-browser-func 'eww)
     (setq helm-dash-min-length 3)
+    (add-hook 'shell-script-mode-hook 'dash-bash-docs)
+    (add-hook 'java-mode-hook 'dash-java-docs)
+    (add-hook 'python-mode-hook 'dash-python-docs)
+    (add-hook 'css-mode-hook 'dash-css-docs)
+    (add-hook 'js2-mode-hook 'dash-javascript-docs)
+    (add-hook 'web-mode-hook 'dash-web-docs)
     ))
 
 (defun qinshulei/post-init-helm ()

@@ -65,3 +65,40 @@ This is useful when followed by an immediate kill."
 
 ;;binder insert date to key c-x t
 (global-set-key (kbd "C-x t") 'insert-date)
+
+;; kill all buffers
+(defun kill-all-buffers ()
+  "kill all buffers"
+  (interactive)
+  (mapcar (lambda (x) (kill-buffer x))
+          (buffer-list))
+  (delete-other-windows))
+
+;; set helm dash
+(defun dash-python-docs ()
+  (interactive)
+  (setq-local helm-dash-docsets '("Python 2")))
+
+(defun dash-bash-docs ()
+  (interactive)
+  (setq-local helm-dash-docsets '("Bash")))
+
+(defun dash-web-docs ()
+  (interactive)
+  (setq-local helm-dash-docsets '("HTML" "CSS" "Bootstrap 3" "JavaScript" "jQuery" "Emmet")))
+
+(defun dash-css-docs ()
+  (interactive)
+  (setq-local helm-dash-docsets '("CSS" "Emmet")))
+
+(defun dash-javascript-docs ()
+  (interactive)
+  (setq-local helm-dash-docsets '("JavaScript" "jQuery" "Emmet")))
+
+(defun dash-java-docs ()
+  (interactive)
+  (setq-local helm-dash-docsets '("Java")))
+
+(defun dash-elisp-docs ()
+  (interactive)
+  (setq-local helm-dash-docsets '("Emacs Lisp")))
