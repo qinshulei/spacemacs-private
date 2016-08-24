@@ -29,3 +29,9 @@
 ;; DEL during isearch should edit the search string, not jump back to the previous result
 (define-key isearch-mode-map [remap isearch-delete-char] 'isearch-del-char)
 (define-key isearch-mode-map [(control return)] 'isearch-exit-other-end)
+
+;; set move window
+(global-set-key (kbd "C-<left>") 'windmove-left)
+(global-set-key (kbd "C-<down>") 'windmove-down)
+(global-set-key (kbd "C-<up>") 'windmove-up)
+(global-set-key (kbd "C-<right>") 'windmove-right)

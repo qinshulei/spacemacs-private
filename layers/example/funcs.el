@@ -45,3 +45,69 @@
     (while (< (point) marker)
       (funcall indent-line-function)
       (forward-line 1))))
+
+;; insert
+(defun insert-name ()
+  (interactive)
+  (insert "qinshulei")
+  )
+
+(defun insert-mail ()
+  (interactive)
+  (insert "527072230@qq.com")
+  )
+
+;; find file
+(defun my-config-file()
+  (interactive)
+  (find-file "~/.spacemacs.d/init.el"))
+
+;; lambda function
+(global-set-key (kbd "M-j")
+                (lambda ()
+                  (interactive)
+                  (join-line -1)))
+
+;; align (
+(defun my-align-test (s e)
+  (interactive "r")
+  (align-regexp s e "\\(\\s-*\\)(" 1 1 t))
+
+;; previous window
+(global-set-key (kbd "C-<left>")
+                (lambda ()
+                  (interactive)
+                  (other-window -1)))
+(global-set-key (kbd "C-<right>")
+                (lambda ()
+                  (interactive)
+                  (other-window 1)))
+
+;; ****************************************************************************
+;; Jump to point
+;; ****************************************************************************
+
+(global-set-key [(shift f1)] '(lambda ()
+                                (interactive)
+                                (point-to-register 1)))
+(global-set-key [(shift f2)] '(lambda ()
+                                (interactive)
+                                (point-to-register 2)))
+(global-set-key [(shift f3)] '(lambda ()
+                                (interactive)
+                                (point-to-register 3)))
+(global-set-key [(shift f4)] '(lambda ()
+                                (interactive)
+                                (point-to-register 4)))
+(global-set-key [(control f1)] '(lambda ()
+                                  (interactive)
+                                  (jump-to-register 1)))
+(global-set-key [(control f2)] '(lambda ()
+                                  (interactive)
+                                  (jump-to-register 2)))
+(global-set-key [(control f3)] '(lambda ()
+                                  (interactive)
+                                  (jump-to-register 3)))
+(global-set-key [(control f4)] '(lambda ()
+                                  (interactive)
+                                  (jump-to-register 4)))
