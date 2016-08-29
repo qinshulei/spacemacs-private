@@ -37,6 +37,7 @@ values."
                                        groovy
                                        multiple-cursors
                                        visual-regexp
+                                       bm
                                        ;; tools
                                        org
                                        (dash :variables
@@ -86,6 +87,7 @@ values."
                                       ag
                                       livescript-mode
                                       suggest
+                                      selectric-mode ;; Make your Emacs sound like a proper typewriter.
                                       )
    ;; A list of packages and/or extensions that will not be install and loaded.
    dotspacemacs-excluded-packages '(

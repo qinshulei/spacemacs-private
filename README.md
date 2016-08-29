@@ -53,6 +53,14 @@ C-<down> windmove-down
 C-<up> windmove-up
 C-<right> windmove-right
 
+[C-f5]  bm-toggle
+[f5]  bm-next
+[f6]  bm-previous
+
+[S-f5]  bm-show-all
+[S-f6]  bm-remove-all-current-buffer
+[C-f6]  bm-bookmark-annotate
+
 # set-mark-command first , then in isearch mode.
 M-z runs the command zap-to-isearch
 C-o runs the command isearch-occur

@@ -224,3 +224,10 @@
 (defun my-compile ()
   (interactive)
   (compile "make -j4"))
+
+
+(dolist (hook '(css-mode-hook
+                html-mode-hook
+                js-mode-hook
+                r-mode-hook))
+  (add-hook hook 'rainbow-mode))
