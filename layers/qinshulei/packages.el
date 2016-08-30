@@ -12,6 +12,9 @@
         web-mode
         company
         helm
+        ;; better helm sort and fuzzy match
+        helm-flx
+        helm-fuzzier
         helm-dash
         camcorder
         ))
@@ -137,4 +140,16 @@
   (use-package helm
     :config
     (setq helm-M-x-prefix-argument t)
+    ))
+
+(defun qinshulei/init-helm-fuzzier ()
+  (use-package helm-fuzzier
+    :config
+    (helm-fuzzier-mode 1)
+    ))
+
+(defun qinshulei/init-helm-flx ()
+  (use-package helm-flx
+    :config
+    (helm-flx-mode +1)
     ))

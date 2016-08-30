@@ -20,6 +20,7 @@ git clone https://github.com/qinshulei/spacemacs-private.git ~/.spacemacs.d/
 + helm-dash 查看dash文档
 + browse-kill-ring 浏览粘贴板
 + groovy-mode 支持groovy语言
++ helm-flx helm-fuzzier 更好的helm排序
 
 ## special key bindings
 
