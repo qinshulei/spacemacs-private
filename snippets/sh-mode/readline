@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: read line from file
+# key: readline
+# --
+while read LINE;do
+      echo $LINE$0
+done < ${1:/path/to/file}

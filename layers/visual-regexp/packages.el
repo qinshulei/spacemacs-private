@@ -9,11 +9,14 @@
 
 (defun visual-regexp/init-visual-regexp ()
   (use-package visual-regexp
-    :init))
+    :init
+    :ensure t))
 
 (defun visual-regexp/init-visual-regexp-steroids ()
   (use-package visual-regexp-steroids
     :init
+    :ensure t
+    :ensure visual-regexp
     :bind (("C-M-%" . vr/replace)
            ("M-%"   . vr/query-replace)
            ("C-M-r"   . vr/isearch-backward)

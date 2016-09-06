@@ -53,7 +53,9 @@ values."
                                                         version-control-global-margin t)
                                        (auto-completion :variables
                                                         auto-completion-enable-sort-by-usage t
-                                                        auto-completion-enable-snippets-in-popup t)
+                                                        auto-completion-enable-snippets-in-popup t
+                                                        auto-completion-enable-help-tooltip t
+                                                        :disabled-for org markdown)
                                        (syntax-checking :variables
                                                         syntax-checking-enable-by-default nil)
                                        (spell-checking :variables
@@ -303,6 +305,12 @@ layers configuration."
                             :file "~/configs/chinese-py/pyim-bigdict.txt"
                             :coding utf-8-unix
                             :dict-type pinyin-dict)))
+
+  (setq-default js2-basic-offset 2
+                js-indent-level 2)
+  ;; Set default private snippets
+  (setq auto-completion-private-snippets-directory
+        (expand-file-name "snippets" dotspacemacs-directory))
   )
 
 
