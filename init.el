@@ -90,6 +90,7 @@ values."
                                       livescript-mode
                                       suggest
                                       selectric-mode ;; Make your Emacs sound like a proper typewriter.
+                                      quickrun
                                       )
    ;; A list of packages and/or extensions that will not be install and loaded.
    dotspacemacs-excluded-packages '(
