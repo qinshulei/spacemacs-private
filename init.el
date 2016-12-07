@@ -296,7 +296,7 @@ in `dotspacemacs/user-config'."
   "Configuration function.
  This function is called at the very end of Spacemacs initialization after
 layers configuration."
-
+  (setq dotspacemacs-version-check-enable 'nil)
   ;; TODO : [WARNING] this config include many hard code location
   (setq-default powerline-default-separator 'arrow
                 org-agenda-files (file-expand-wildcards "~/org/*.org")
