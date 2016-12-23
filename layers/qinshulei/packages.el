@@ -153,3 +153,9 @@
     :config
     (helm-flx-mode +1)
     ))
+
+(defun spacemacs-editing/post-init-expand-region ()
+  (global-set-key (kbd "C-=") 'er/expand-region))
+
+(defun spacemacs-editing/post-init-avy ()
+  (global-set-key (kbd "C-;") 'avy-goto-word-or-subword-1))

@@ -1,11 +1,3 @@
-(defun qinshulei/post-init-expand-region ()
-  (global-set-key (kbd "C-=") 'er/expand-region)
-  )
-
-(defun qinshulei/post-init-avy ()
-  (global-set-key (kbd "C-;") 'avy-goto-word-or-subword-1))
-
-
 (global-set-key (kbd "C-c j") 'join-line)
 (global-set-key (kbd "C-c J") (lambda () (interactive) (join-line 1)))
 
@@ -20,7 +12,6 @@
     (kill-region (point) prev-pos)))
 
 (global-set-key (kbd "C-M-<backspace>") 'kill-back-to-indentation)
-
 
 ;; in isearch mode
 
