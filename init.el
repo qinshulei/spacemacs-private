@@ -92,6 +92,7 @@ values."
                                       selectric-mode ;; Make your Emacs sound like a proper typewriter.
                                       quickrun
                                       dockerfile-mode
+                                      vimgolf
                                       )
    ;; A list of packages and/or extensions that will not be install and loaded.
    dotspacemacs-excluded-packages '(
@@ -313,6 +314,8 @@ layers configuration."
   ;; Set default private snippets
   (setq auto-completion-private-snippets-directory
         (expand-file-name "snippets" dotspacemacs-directory))
+
+  (setq make-backup-files nil)
   )
 
 
