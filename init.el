@@ -63,7 +63,6 @@ values."
 
                                        ;; config file
                                        ansible
-                                       dockerfile
                                        puppet
 
                                        ;; contains chrome edit server
