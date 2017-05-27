@@ -62,8 +62,8 @@ values."
                                                        spell-checking-enable-by-default nil)
 
                                        ;; config file
-                                       ansible
-                                       puppet
+                                       ;; ansible
+                                       ;; puppet
 
                                        ;; contains chrome edit server
                                        chrome
