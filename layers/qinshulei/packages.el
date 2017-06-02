@@ -159,3 +159,18 @@
 
 (defun spacemacs-editing/post-init-avy ()
   (global-set-key (kbd "C-;") 'avy-goto-word-or-subword-1))
+
+(defun org/pre-init-org ()
+  (spacemacs|use-package-add-hook org
+    :post-init
+    (progn
+      (org-babel-do-load-languages
+       'org-babel-load-languages
+       '((shell . t)
+         (js . t)
+         (ruby . t)
+         (sh . t)
+         (python . t)
+         (dot . t)
+         (emacs-lisp . t)))
+      )))
