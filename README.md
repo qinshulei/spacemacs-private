@@ -1,6 +1,8 @@
-# qinshueli的 Emacs 配置
+# qinshulei的 Emacs 配置
 
-转 spacemacs, 新的开始. 使用emacs默认快捷键.
+转 spacemacs, 新的开始. 使用emacs默认快捷键，不使用evil. 
+
+快捷键习惯继承自 purcell/emacs.d 。平时主要方向是shell，python脚本， 以及html css js一些前端。
 
 ## 使用方法
 
