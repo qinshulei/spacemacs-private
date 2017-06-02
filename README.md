@@ -31,29 +31,29 @@ git clone https://github.com/qinshulei/spacemacs-private.git ~/.spacemacs.d/
 
 Keybinding         | Description
 -------------------|------------------------------------------------------------
-<kbd>C-c o</kbd>   | Open the currently visited file with an external program.
-<kbd>C-;</kbd> | runs the command avy-goto-word-or-subword-1
-<kbd>C-=</kbd> | runs the command er/expand-region
-<kbd>C-+</kbd> | runs the command mc/mark-next-like-this
-<kbd>M-Y</kbd> | runs the command browse-kill-ring
-<kbd><M-up></kbd> | runs the command md/move-lines-up
-<kbd><M-down></kbd> | runs the command md/move-lines-down
-<kbd>C-c d</kbd> | runs the command md/duplicate-down
-<kbd>C-c D</kbd> | runs the command md/duplicate-up
-<kbd>C-.</kbd> | runs the command set-mark-command
-<kbd>C-c j</kbd> | runs the command join-line
-<kbd>C-M-<backspace></kbd> | runs the command kill-back-to-indentation
-<kbd>C-x t</kbd> | insert date
-<kbd>C-<left></kbd> | windmove-left
-<kbd>C-<down></kbd> | windmove-down
-<kbd>C-<up></kbd> | windmove-up
-<kbd>C-<right></kbd> | windmove-right
-<kbd>[C-f5]</kbd>  | bm-toggle
-<kbd>[f5]</kbd>  | bm-next
-<kbd>[f6]</kbd> | bm-previous
-<kbd>[S-f5]</kbd> | bm-show-all
-<kbd>[S-f6]</kbd> | bm-remove-all-current-buffer
-<kbd>[C-f6]</kbd> | bm-bookmark-annotate
+<kbd>C-c o</kbd>         | Open the currently visited file with an external program.
+<kbd>C-;</kbd>           | runs the command avy-goto-word-or-subword-1
+<kbd>C-=</kbd>           | runs the command er/expand-region
+<kbd>C-+</kbd>           | runs the command mc/mark-next-like-this
+<kbd>M-Y</kbd>           | runs the command browse-kill-ring
+<kbd>M-up</kbd>          | runs the command md/move-lines-up
+<kbd>M-down</kbd>        | runs the command md/move-lines-down
+<kbd>C-c d</kbd>         | runs the command md/duplicate-down
+<kbd>C-c D</kbd>         | runs the command md/duplicate-up
+<kbd>C-.</kbd>           | runs the command set-mark-command
+<kbd>C-c j</kbd>         | runs the command join-line
+<kbd>C-M-backspace</kbd> | runs the command kill-back-to-indentation
+<kbd>C-x t</kbd>         | insert date
+<kbd>C-left</kbd>        | windmove-left
+<kbd>C-down</kbd>        | windmove-down
+<kbd>C-up</kbd>          | windmove-up
+<kbd>C-right</kbd>       | windmove-right
+<kbd>C-f5</kbd>          | bm-toggle
+<kbd>f5</kbd>            | bm-next
+<kbd>f6</kbd>            | bm-previous
+<kbd>S-f5</kbd>          | bm-show-all
+<kbd>S-f6</kbd>          | bm-remove-all-current-buffer
+<kbd>C-f6</kbd>          | bm-bookmark-annotate
 
 # set-mark-command first , then in isearch mode.
 Keybinding         | Description
@@ -64,7 +64,7 @@ Keybinding         | Description
 # in camcorder-record
 Keybinding         | Description
 -------------------|------------------------------------------------------------
-<kbd>F9</kbd> | stop record
+<kbd>F9</kbd>       | stop record
 <kbd>shift-F9</kbd> | pause record
 
 ```
