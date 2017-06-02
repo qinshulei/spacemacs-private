@@ -29,50 +29,42 @@ git clone https://github.com/qinshulei/spacemacs-private.git ~/.spacemacs.d/
 
 ## special key bindings
 
-```
-C-; runs the command avy-goto-word-or-subword-1
-
-C-= runs the command er/expand-region
-
-C-+ runs the command mc/mark-next-like-this
-
-M-Y runs the command browse-kill-ring
-
-<M-up> runs the command md/move-lines-up
-
-<M-down> runs the command md/move-lines-down
-
-C-c d runs the command md/duplicate-down
-
-C-c D runs the command md/duplicate-up
-
-C-. runs the command set-mark-command
-
-C-c j runs the command join-line
-
-C-M-<backspace> runs the command kill-back-to-indentation
-
-C-x t insert date
-
-C-<left> windmove-left
-C-<down> windmove-down
-C-<up> windmove-up
-C-<right> windmove-right
-
-[C-f5]  bm-toggle
-[f5]  bm-next
-[f6]  bm-previous
-
-[S-f5]  bm-show-all
-[S-f6]  bm-remove-all-current-buffer
-[C-f6]  bm-bookmark-annotate
+Keybinding         | Description
+-------------------|------------------------------------------------------------
+<kbd>C-c o</kbd>   | Open the currently visited file with an external program.
+<kbd>C-;</kbd> | runs the command avy-goto-word-or-subword-1
+<kbd>C-=</kbd> | runs the command er/expand-region
+<kbd>C-+</kbd> | runs the command mc/mark-next-like-this
+<kbd>M-Y</kbd> | runs the command browse-kill-ring
+<kbd><M-up></kbd> | runs the command md/move-lines-up
+<kbd><M-down></kbd> | runs the command md/move-lines-down
+<kbd>C-c d</kbd> | runs the command md/duplicate-down
+<kbd>C-c D</kbd> | runs the command md/duplicate-up
+<kbd>C-.</kbd> | runs the command set-mark-command
+<kbd>C-c j</kbd> | runs the command join-line
+<kbd>C-M-<backspace></kbd> | runs the command kill-back-to-indentation
+<kbd>C-x t</kbd> | insert date
+<kbd>C-<left></kbd> | windmove-left
+<kbd>C-<down></kbd> | windmove-down
+<kbd>C-<up></kbd> | windmove-up
+<kbd>C-<right></kbd> | windmove-right
+<kbd>[C-f5]</kbd>  | bm-toggle
+<kbd>[f5]</kbd>  | bm-next
+<kbd>[f6]</kbd> | bm-previous
+<kbd>[S-f5]</kbd> | bm-show-all
+<kbd>[S-f6]</kbd> | bm-remove-all-current-buffer
+<kbd>[C-f6]</kbd> | bm-bookmark-annotate
 
 # set-mark-command first , then in isearch mode.
-M-z runs the command zap-to-isearch
-C-o runs the command isearch-occur
+Keybinding         | Description
+-------------------|------------------------------------------------------------
+<kbd>M-z</kbd> | runs the command zap-to-isearch
+<kbd>C-o</kbd> | runs the command isearch-occur
 
 # in camcorder-record
-F9 stop record
-shift-F9 pause record
+Keybinding         | Description
+-------------------|------------------------------------------------------------
+<kbd>F9</kbd> | stop record
+<kbd>shift-F9</kbd> | pause record
 
 ```
