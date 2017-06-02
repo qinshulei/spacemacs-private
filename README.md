@@ -22,6 +22,9 @@ git clone https://github.com/qinshulei/spacemacs-private.git ~/.spacemacs.d/
 + groovy-mode 支持groovy语言
 + helm-flx helm-fuzzier 更好的helm排序
 
+## extra config
++ 支持org babel dot格式的图的显示
+
 ## special key bindings
 
 ```

@@ -17,6 +17,7 @@
         helm-fuzzier
         helm-dash
         camcorder
+        org
         ))
 
 (defun qinshulei/init-move-dup ()
@@ -160,17 +161,16 @@
 (defun spacemacs-editing/post-init-avy ()
   (global-set-key (kbd "C-;") 'avy-goto-word-or-subword-1))
 
-(defun org/pre-init-org ()
+(defun qinshulei/pre-init-org ()
   (spacemacs|use-package-add-hook org
     :post-init
-    (progn
-      (org-babel-do-load-languages
-       'org-babel-load-languages
-       '((shell . t)
-         (js . t)
-         (ruby . t)
-         (sh . t)
-         (python . t)
-         (dot . t)
-         (emacs-lisp . t)))
-      )))
+    ;; Enable Babel evaluation of JavaScript, Dot.
+    (require 'ob-js)
+    (require 'ob-dot)
+    :post-config
+    (add-to-list 'org-babel-load-languages '(dot . t))
+
+    ;; Automatically redisplay images after executing code.  Great for Dot
+    ;; graphs source blocks.
+    (add-hook 'org-babel-after-execute-hook 'org-display-inline-images)
+    ))
