@@ -102,3 +102,32 @@ This is useful when followed by an immediate kill."
 (defun dash-elisp-docs ()
   (interactive)
   (setq-local helm-dash-docsets '("Emacs Lisp")))
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;    simple code                 ;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; convert WorkerForBuilderPb(WorkerForBuilderBase, pb.Referenceable) to
+;; WorkerForBuilderPb -> WorkerForBuilderBase  WorkerForBuilderPb ->  pb.Referenceable
+(defun qinshulei-class-to-dot ()
+  (interactive)
+  (search-forward "(")
+
+  (setq splitPos (1- (point)))
+  (beginning-of-line)
+  (setq className (buffer-substring-no-properties (point) splitPos))
+
+  (end-of-line)
+  (setq restLine (buffer-substring-no-properties splitPos (point) ))
+
+  (setq list (split-string (substring restLine 1 (- (string-width restLine) 1)) ","))
+
+  (beginning-of-line)
+  (kill-line)
+  (while list
+    (setq restClass (car list))
+    (insert className " -> " restClass "\n")
+    (setq list (cdr list)))
+
+  (save-buffer)
+  (next-line)
+  )
