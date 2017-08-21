@@ -67,7 +67,7 @@ Keybinding         | Description
 <kbd>F9</kbd>       | stop record
 <kbd>shift-F9</kbd> | pause record
 
-```
+
 
 ## for windows
 
