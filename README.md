@@ -67,4 +67,20 @@ Keybinding         | Description
 <kbd>F9</kbd>       | stop record
 <kbd>shift-F9</kbd> | pause record
 
+
+
+## for windows
+
+config home , and path by bat.
+
+layer chinese don't support windows, close it.
+
+windows don't support empty file. init these file.
+
+```
+set OLDPATH=%PATH%
+set PATH=%PATH%;C:\Program Files (x86)\Git\bin
+set LANG=en
+set HOME=C:\Users\ts
+C:\Users\ts\Desktop\emacs-25.1\bin\runemacs --debug-init %*
 ```
