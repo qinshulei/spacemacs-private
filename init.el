@@ -80,6 +80,7 @@ values."
                                        yaml
                                        graphviz
                                        lua
+                                       go
                                        )
    ;; List of additional packages that will be installed without being
    ;; wrapped in a layer. If you need some configuration for these
@@ -96,6 +97,7 @@ values."
                                       vimgolf
                                       gift-mode
                                       rainbow-mode
+                                      rectangle-utils
                                       )
    ;; A list of packages and/or extensions that will not be install and loaded.
    dotspacemacs-excluded-packages '(
