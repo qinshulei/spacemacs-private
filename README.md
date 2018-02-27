@@ -7,6 +7,7 @@
 ## 使用方法
 
 ```
+sudo apt-get install -y emacs24
 git clone https://github.com/syl20bnr/spacemacs.git ~/.emacs.d
 git clone https://github.com/qinshulei/spacemacs-private.git ~/.spacemacs.d/
 ```
