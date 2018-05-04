@@ -100,6 +100,7 @@ values."
                                       gift-mode
                                       rainbow-mode
                                       rectangle-utils
+                                      logview
                                       )
    ;; A list of packages and/or extensions that will not be install and loaded.
    dotspacemacs-excluded-packages '(

@@ -231,3 +231,17 @@
                 js-mode-hook
                 r-mode-hook))
   (add-hook hook 'rainbow-mode))
+
+
+
+(defun http_proxy_open ()
+  (setq url-proxy-services
+        '(("no_proxy" . "^\\(localhost\\|192.*\\)")
+          ("http" . "192.168.67.10:3128")
+          ("https" . "192.168.67.10:3128")))
+
+  (setq url-http-proxy-basic-auth-storage
+        (list (list "192.168.67.10:3128"
+                    (cons "Input your LDAP UID !"
+                          (base64-encode-string "qinsl0106:QinShuLei6314156")))))
+  )
