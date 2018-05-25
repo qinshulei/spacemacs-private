@@ -18,6 +18,7 @@
         helm-dash
         camcorder
         org
+        vlf
         ))
 
 (defun qinshulei/init-move-dup ()
@@ -174,3 +175,6 @@
     ;; graphs source blocks.
     (add-hook 'org-babel-after-execute-hook 'org-display-inline-images)
     ))
+
+(defun qinshulei/init-vlf ()
+  (use-package vlf))
