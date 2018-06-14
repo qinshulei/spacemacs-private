@@ -38,6 +38,13 @@ values."
                                        multiple-cursors
                                        visual-regexp
                                        bm
+                                       anzu
+                                       camcorder
+                                       highlight-indentation
+                                       move-dup
+                                       sublimity
+                                       vlf
+
                                        ;; tools
                                        org
                                        (dash :variables
@@ -102,8 +109,8 @@ values."
                                       rectangle-utils
                                       logview
                                       nginx-mode
-                                      sublimity
                                       git-blamed
+                                      alda-mode
                                       )
    ;; A list of packages and/or extensions that will not be install and loaded.
    dotspacemacs-excluded-packages '(
