@@ -14,7 +14,7 @@
                                             yaml-mode
                                             groovy-mode
                                             python-mode-hook
-                                            shell-mode-hook
+                                            shell-script-mode-hook
                                             php-mode-hook
                                             css-mode-hook
                                             nxml-mode-hook
