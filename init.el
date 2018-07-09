@@ -103,11 +103,11 @@ values."
                                       selectric-mode ;; Make your Emacs sound like a proper typewriter.
                                       quickrun
                                       dockerfile-mode
-                                      vimgolf
+                                      ;; vimgolf
                                       gift-mode
                                       rainbow-mode
                                       rectangle-utils
-                                      logview
+                                      ;; logview
                                       nginx-mode
                                       git-blamed
                                       alda-mode
