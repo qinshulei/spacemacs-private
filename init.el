@@ -44,6 +44,8 @@ values."
                                        move-dup
                                        sublimity
                                        vlf
+                                       paredit
+                                       paredit-everywhere
 
                                        ;; tools
                                        org
