@@ -74,6 +74,9 @@
     (add-hook 'web-mode-hook 'dash-web-docs)
     ))
 
+(defun qinshulei/post-init-flycheck ()
+  (spacemacs/add-flycheck-hook 'sh-mode))
+
 (defun qinshulei/post-init-helm ()
   (use-package helm
     :config
