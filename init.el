@@ -346,6 +346,14 @@ layers configuration."
         (expand-file-name "snippets" dotspacemacs-directory))
 
   (setq make-backup-files nil)
+
+  ;; change google translate url
+  (setq google-translate-base-url "http://translate.google.cn/translate_a/single")
+  (setq google-translate-listen-url "http://translate.google.cn/translate_tts")
+  (setq google-translate--tkk-url "http://translate.google.cn/")
+  (global-set-key "\C-ct" 'google-translate-at-point)
+  (global-set-key "\C-cT" 'google-translate-query-translate)
+  (spacemacs/set-google-translate-languages "en" "zh-CN")
   )
 
 
