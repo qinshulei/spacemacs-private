@@ -24,6 +24,14 @@ git clone https://github.com/qinshulei/spacemacs-private.git ~/.spacemacs.d/
 + browse-kill-ring 浏览粘贴板
 + groovy-mode 支持groovy语言
 + helm-flx helm-fuzzier 更好的helm排序
++ company-english-helper 英语提示
++ highlight-indentation 缩进线
++ lsp bash 补全
++ paredit-everywhere 理解字符范围的kill
++ symbol-overlay 符号高亮，辅助阅读代码
++ bm 书签
++ wgrep 可编辑的grep结果
+
 
 ## extra config
 + 支持org babel dot格式的图的显示
