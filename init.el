@@ -66,9 +66,9 @@ values."
                                                         auto-completion-enable-help-tooltip t
                                                         :disabled-for org markdown)
                                        (syntax-checking :variables
-                                                        syntax-checking-enable-by-default nil)
+                                                        syntax-checking-enable-by-default t)
                                        (spell-checking :variables
-                                                       spell-checking-enable-by-default nil)
+                                                       spell-checking-enable-by-default t)
 
                                        ;; config file
                                        ;; ansible
@@ -126,6 +126,7 @@ values."
                                       wgrep-helm
                                       company
                                       virtualenvwrapper
+                                      yasnippet-snippets
                                       )
    ;; A list of packages and/or extensions that will not be install and loaded.
    dotspacemacs-excluded-packages '(

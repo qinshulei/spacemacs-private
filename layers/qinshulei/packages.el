@@ -75,7 +75,8 @@
     ))
 
 (defun qinshulei/post-init-flycheck ()
-  (spacemacs/add-flycheck-hook 'sh-mode))
+  (spacemacs/add-flycheck-hook 'sh-mode)
+  )
 
 (defun qinshulei/post-init-helm ()
   (use-package helm
