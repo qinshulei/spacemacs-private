@@ -129,6 +129,7 @@ values."
                                       yasnippet-snippets
                                       bats-mode
                                       bitbake
+                                      typescript-mode
                                       )
    ;; A list of packages and/or extensions that will not be install and loaded.
    dotspacemacs-excluded-packages '(
