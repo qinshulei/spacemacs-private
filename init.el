@@ -113,6 +113,9 @@ values."
                                       selectric-mode ;; Make your Emacs sound like a proper typewriter.
                                       quickrun
                                       dockerfile-mode
+                                      docker
+                                      magit-todos
+                                      ;; magit-svn
                                       ;; vimgolf
                                       gift-mode
                                       rainbow-mode
