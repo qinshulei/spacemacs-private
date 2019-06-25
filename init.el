@@ -133,6 +133,8 @@ values."
                                       bats-mode
                                       bitbake
                                       typescript-mode
+                                      pinyin-search
+                                      find-by-pinyin-dired
                                       )
    ;; A list of packages and/or extensions that will not be install and loaded.
    dotspacemacs-excluded-packages '(
