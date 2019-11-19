@@ -52,7 +52,10 @@ values."
                                        (dash :variables
                                              dash-helm-dash-docset-path "~/.docsets")
                                        command-log
-                                       wakatime
+                                       (wakatime :variables
+                                                 wakatime-api-key  "5ee47a27-5a03-44d0-ac35-a15a7fa7a0af"
+                                                 wakatime-cli-path "/usr/bin/wakatime"
+                                                 )
                                        shell
                                        better-defaults
                                        chinese
@@ -135,6 +138,8 @@ values."
                                       typescript-mode
                                       pinyin-search
                                       find-by-pinyin-dired
+                                      (clean-buffers :variables
+                                                     clean-buffer-useless-buffer-timeout 30)
                                       )
    ;; A list of packages and/or extensions that will not be install and loaded.
    dotspacemacs-excluded-packages '(
