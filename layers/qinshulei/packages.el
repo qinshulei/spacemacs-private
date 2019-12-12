@@ -14,6 +14,7 @@
         helm-fuzzier
         helm-dash
         org
+        highlight
         ))
 
 (defun qinshulei/init-browse-kill-ring ()
