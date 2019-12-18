@@ -140,6 +140,7 @@ values."
                                       find-by-pinyin-dired
                                       (clean-buffers :variables
                                                      clean-buffer-useless-buffer-timeout 30)
+                                      vc-msg
                                       )
    ;; A list of packages and/or extensions that will not be install and loaded.
    dotspacemacs-excluded-packages '(
